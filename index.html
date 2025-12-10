@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Sivakumar | Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+</head>
+<body>
+  <!-- NAVBAR -->
+  <header class="navbar">
+    <div class="logo">Sivakumar A</div>
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#education">Education</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#certificates">Certificates</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <!-- HERO SECTION -->
+  <section id="home" class="hero">
+     <div class="hero-container"></div>
+    <div class="hero-text">
+      <h1>Hi, I'm <span>Sivakumar A</span></h1>
+      <h2>I am <span class="typing-text"></span></h2>
+
+      <p>
+        Turning data into intelligent ML models, predictive systems, and AI-driven applications.
+        Focused on building practical, end-to-end machine learning systems from data to deployment.
+      </p>
+      <div class="hero-buttons">
+        <a href="#projects" class="btn primary">View My Projects</a>
+        <a href="#contact" class="btn secondary">Contact Me</a>
+        <a href="assets/resume.pdf" class="btn secondary" download>
+          Download Resume</a>
+      </div>
+    </div>
+    <div class="hero-image">
+      <img src="images/profile.jpg" alt="Sivakumar Profile Photo" />
+      
+      <div class="social-icons">
+      <a href="https://github.com/sivakumarbe" target="_blank" aria-label="GitHub">
+      <i class="fab fa-github"></i>
+    </a>
+    
+    <a href="www.linkedin.com/in/sivakumar-lingam" target="_blank" aria-label="LinkedIn">
+      <i class="fab fa-linkedin"></i>
+      </a>
+     </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about" class="section">
+    <h2>About Me</h2>
+    <p>
+      I am an aspiring AI and Machine Learning Engineer, transitioning into the field through hands-on, project-driven learning. I build end-to-end machine learning systems using Python, focusing on data preprocessing, model training, evaluation, and deployment-ready solutions.
+
+      My work includes deep learning, NLP, and LLM-based systems, with projects spanning healthcare, forecasting, and risk prediction. I am continuously improving my skills in modern AI workflows and seeking entry-level AI/ML Engineer opportunities to grow and contribute to real-world AI systems.
+    </p>
+  </section>
+
+  <!-- EDUCATION -->
+<section id="education" class="section education-section">
+  <h2>Education</h2>
+
+  <div class="education-timeline">
+
+    
+    <div class="education-card elevate floating">
+
+      <h3>Bachelor of Engineering (B.E) – Electrical and Electronics Engineering</h3>
+      <p class="institution">Nandha Engineering College, Anna University</p>
+      <p class="duration">2015</p>
+      <p class="details">
+        Focused on Electrical motors and programming fundamentals.
+      </p>
+    </div>
+
+    <div class="education-card elevate floating">
+
+      <h3>Higher Secondary (HSC)</h3>
+      <p class="institution">R.C.M Higher Secondary School</p>
+      <p class="duration">2010</p>
+      <p class="details">
+        Specialized in Mathematics and Biology.
+      </p>
+    </div>
+
+    <!-- Add more if needed -->
+
+  </div>
+</section>
+
+
+  <!-- SKILLS -->
+  <section id="skills" class="section skills-section">
+    <h2>Skills</h2>
+    <div class="skills-grid">
+      <div class="skill-card">Python</div>
+      <div class="skill-card">Machine Learning</div>
+      <div class="skill-card">Deep learning (CNN,LSTM,Attention Models)</div>
+      <div class="skill-card">Model Training, Tuning & Optimization</div>
+      <div class="skill-card">Feature Engineering & Data cleaning</div>
+      <div class="skill-card">Time Series Analysis & Forecasting</div>
+      <div class="skill-card">Business & Problem-Oriented Analytics</div>
+      <div class="skill-card">Data Visualization</div>
+      <div class="skill-card">Flutter App Development</div>
+      <div class="skill-card">NLP</div>
+      <div class="skill-card">LLM</div>
+      <div class="skill-card">RAG</div>
+      <div class="skill-card">Transformers</div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects" class="section">
+    <h2>Projects</h2>
+
+    <div class="project-card">
+      <h3>SwastAid – Smart Health Assistant</h3>
+      <p>
+        SwastAid is a Flutter-based mobile healthcare assistant designed to help diabetic patients manage daily medication routines and understand blood sugar reports using OCR technology. get meal suggestion based on the glucose values to recover fast. get pill reminders with text-to-speech notifications, ensuring timely medication intake.
+      </p>
+      <p>The application focuses on simplicity, offline storage, and accessibility, especially for elderly users.</p>
+      <ul>
+        <li>Built with Flutter</li>
+        <li>Uses OCR to extract blood glucose values directly from medical reports</li>
+        <li>Treats food as medicine by providing personalized meal suggestions based on glucose levels</li>
+        <li>Smart pill reminders with voice notifications (TTS) for better adherence</li>
+        <li>Daily activities to promote a healthier lifestyle</li>
+        <li>Data Storage SharedPreferences & Local File Storage</li>
+      </ul>
+      <!-- Add your GitHub link later if you want -->
+      <a href="https://github.com/sivakumarbe/SwastAid-Healthcare-App.git" target="_blank" class="btn small">View on GitHub</a>
+    </div>
+
+     
+
+    <div class="project-card">
+      <h3>Advanced Time Series Forecasting with Neural Networks and Attention Mechanisms</h3>
+      <p>
+        This project implements a Deep Learning Time Series Forecasting pipeline designed to predict macroeconomic indicators (specifically Real GDP) using a Long Short-Term Memory (LSTM) network augmented with a Self-Attention Mechanism.
+        The model is built using PyTorch and is benchmarked against a Standard LSTM (without attention) and Prophet (optional) to demonstrate the efficacy of attention mechanisms in capturing long-term dependencies and seasonal patterns in multivariate time series data.
+      </p>
+      <ul>
+        <li>Self-Attention Mechanism: A custom PyTorch module that weighs the importance of different time steps in the input sequence, allowing the model to focus on relevant historical context</li>
+        <li>Multivariate Forecasting: Uses multiple macroeconomic variables (Consumption, Investment, CPI, Unemployment) to predict GDP</li>
+        <li>Robust Backtesting: Implements Rolling-Window Cross-Validation (3 sequential holdout folds) to ensure performance stability</li>
+        <li>Hyperparameter Optimization: Integrated Optuna support for Bayesian optimization of learning rate, hidden dimensions, dropout, and layers</li>
+        <li>Production-Ready Pipeline: Single-file architecture including data loading, scaling, feature engineering, training, evaluation, and reporting.</li>
+      </ul>
+      <!-- Add your GitHub link later if you want -->
+      <a href="https://github.com/sivakumarbe/Advanced-Time-Series-Forecasting-with-Neural-Networks-and-Attention-Mechanisms.git"target="_blank" class="btn small">View on GitHub</a>
+    </div>
+
+    
+    <div class="project-card">
+      <h3>High-Dimensional-Credit-Risk-Prediction using SHAP & LIME</h3>
+      <p>
+        This project contains a Jupyter Notebook that performs data preprocessing, exploratory data analysis (EDA), feature engineering, and machine learning modeling for a real-world dataset. The goal is to build a predictive model with clean, well-structured analysis.Also includes model interpretability techniques using SHAP and LIME to explain the predictions of the trained model.
+      </p>
+      <ul>
+        <li>Performed data loading, cleaning, preprocessing, and handling of missing or inconsistent values.</li>
+        <li>Conducted exploratory data analysis (EDA) using statistical summaries and visualizations to uncover trends, patterns, correlations, and outliers</li>
+        <li>Applied feature engineering techniques including encoding categorical variables, scaling, and feature selection</li>
+        <li>Built and compared multiple machine learning models such as Linear Regression, Logistic Regression, Decision Tree, Random Forest, and XGBoost.</li>
+        <li>Optimized model performance using hyperparameter tuning (GridSearchCV / RandomizedSearchCV).</li>
+        <li>Evaluated model performance using metrics like accuracy, precision, recall, F1-score, and ROC-AUC.</li>
+        <li>Created insightful visualizations including heatmaps, scatter plots, line charts, and actual vs predicted comparisons</li>
+      </ul>
+      <!-- Add your GitHub link later if you want -->
+      <a href="https://github.com/sivakumarbe/High-Dimensional-Credit-Risk-Prediction.git" target="_blank" class="btn small">View on GitHub</a>
+    </div>
+
+    <div class="project-card">
+      <h3> Electricity Demand Forecasting using XGBoost</h3>
+      <p>
+        This project builds a machine learning model to forecast electricity demand using historical consumption patterns.The workflow includes data preprocessing, feature engineering, time-series validation, and XGBoost regression modeling
+      </p>
+      <ul>
+        <li>Load and explore the electricity demand dataset</li>
+        <li>Convert and process timestamp data</li>
+        <li>Perform resampling and create time-based features</li>
+        <li>Split the dataset using TimeSeriesSplit</li>
+        <li>Convert and process timestamp data</li>
+        <li>Train an XGBoostRegressor</li>
+        <li>Evaluate the model using RMSE and MAE</li>
+        <li>Visualize predictions vs actual demand</li>
+      </ul>
+      <!-- Add your GitHub link later if you want -->
+      <a href="https://github.com/sivakumarbe/Electricity-Demand-Prediction.git" target="_blank" class="btn small">View on GitHub</a>
+    </div>
+    </section>
+
+
+    <!-- CERTIFICATES -->
+<section id="certificates" class="section certificates-section">
+  <h2>Certifications</h2>
+
+  <div class="certificates-grid">
+    <div class="certificate-card elevate floating">
+
+      <h3>Artificail Intelligence programmer</h3>
+      <p class="issuer">Issued by: Cultus</p>
+      <p class="date">Year: 2025</p>
+      <a href="#" class="cert-btn" target="_blank">View Certificate</a>
+    </div>
+
+    <div class="certificate-card elevate floating">
+      <h3>Generative AI Mastermind</h3>
+      <p class="issuer">Issued by: Outskill</p>
+      <p class="date">Year: 2025</p>
+      <a href="assets/certificates/Generative_mastermind.pdf" class="cert-btn" target="_blank">View Certificate</a>
+    </div>
+
+    <div class="certificate-card elevate floating">
+      <h3>Flutter Mobile App Development</h3>
+      <p class="issuer">Issued by: Udemy</p>
+      <p class="date">Year: 2025</p>
+      <a href="#" class="cert-btn" target="_blank">View Certificate</a>
+    </div>
+  </div>
+</section>
+
+ <!-- CONTACT -->
+<section id="contact" class="section">
+  <h2>Contact</h2>
+  <p>If you’d like to collaborate or discuss an opportunity, feel free to reach out.</p>
+
+  <div class="contact-details">
+    <p>
+      <strong>Email:</strong>
+      <a href="mailto:sivakumarbe.lingam@gmail.com">
+        sivakumarbe.lingam@gmail.com
+      </a>
+    </p>
+
+    <p>
+      <strong>Location:</strong> India
+    </p>
+
+    <p>
+      <strong>LinkedIn:</strong>
+      <a href="https://www.linkedin.com/in/sivakumar-lingam" target="_blank">
+        linkedin.com/in/sivakumar-lingam
+      </a>
+    </p>
+
+    <p>
+      <strong>GitHub:</strong>
+      <a href="https://github.com/sivakumarbe" target="_blank">
+        github.com/sivakumarbe
+      </a>
+    </p>
+  </div>
+</section>
+
+
+  <footer class="footer">
+    © 2025 Sivakumar. All rights reserved.
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
