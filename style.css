@@ -451,6 +451,68 @@ body {
   color: #020617;
 }
 
+/* ============================
+   MOBILE VIEW FIXES (MAX 768PX)
+   ============================ */
+@media (max-width: 768px) {
+
+  /* Center everything in hero section */
+  #hero {
+    text-align: center;
+    padding: 20px;
+  }
+
+  /* Fix heading spacing */
+  #hero h1 {
+    font-size: 1.8rem;
+    line-height: 2.2rem;
+  }
+
+  /* Fix typing text width */
+  .typing-text {
+    font-size: 1.2rem;
+    display: block;
+    margin: 10px auto;
+    white-space: normal;
+  }
+
+  /* Profile photo - move image DOWN inside circle */
+  .profile-photo img {
+    object-position: center 15px; /* moves image down slightly */
+    transform: translateY(10px);
+  }
+
+  /* Circle container stays same */
+  .profile-photo {
+    width: 220px;
+    height: 220px;
+    margin: 20px auto;
+  }
+
+  /* Buttons alignment */
+  .buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    align-items: center;
+    justify-content: center;
+    margin-top: 15px;
+  }
+
+  /* GitHub + LinkedIn icons */
+  .social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 18px;
+    margin-top: 18px;
+  }
+
+  /* Prevent text overflow left */
+  .hero-content {
+    padding: 0 15px;
+  }
+}
+
 
 
 
