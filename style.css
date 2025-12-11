@@ -451,65 +451,176 @@ body {
   color: #020617;
 }
 
-/* ============================
-   MOBILE VIEW FIXES (MAX 768PX)
-   ============================ */
+
+/* --- Mobile Responsive Fix for Hero Section --- */
 @media (max-width: 768px) {
 
-  /* Center everything in hero section */
-  #hero {
+    /* Fix container layout */
+    .hero {
+        flex-direction: column !important;
+        text-align: center !important;
+        gap: 2rem;
+        padding-top: 2rem;
+    }
+
+    /* Resize text area */
+    .hero-text {
+        width: 100%;
+        text-align: center;
+        padding: 0 15px;
+    }
+
+    /* Fix name size */
+    .hero-text h1 {
+        font-size: 2rem;
+        line-height: 2.3rem;
+    }
+
+    /* Fix job title typing area */
+    .typing-text {
+        font-size: 1.1rem;
+    }
+
+    /* Center image + reduce size */
+    .hero-image {
+        display: flex;
+        justify-content: center;
+    }
+
+    .hero-image img {
+        width: 230px;          /* adjust size */
+        height: 230px;
+        object-fit: cover;
+        object-position: top;  /* moves head down */
+    }
+
+    /* Center buttons */
+    .hero-buttons {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    .hero-buttons .btn {
+        width: 80%;
+    }
+}
+
+
+/* =============================
+   MOBILE VIEW FIX FOR HERO SECTION
+   ============================= */
+@media (max-width: 768px) {
+
+  /* Stack text & image vertically */
+  .hero {
+    flex-direction: column;
     text-align: center;
     padding: 20px;
   }
 
-  /* Fix heading spacing */
-  #hero h1 {
+  .hero-text {
+    width: 100%;
+    padding: 0 15px;
+    text-align: center;
+  }
+
+  .hero-text h1 {
     font-size: 1.8rem;
     line-height: 2.2rem;
   }
 
-  /* Fix typing text width */
-  .typing-text {
+  .hero-text h2 {
     font-size: 1.2rem;
-    display: block;
-    margin: 10px auto;
-    white-space: normal;
   }
 
-  /* Profile photo - move image DOWN inside circle */
-  .profile-photo img {
-    object-position: center 15px; /* moves image down slightly */
-    transform: translateY(10px);
+  .hero-text p {
+    font-size: 1rem;
   }
 
-  /* Circle container stays same */
-  .profile-photo {
-    width: 220px;
-    height: 220px;
-    margin: 20px auto;
-  }
-
-  /* Buttons alignment */
-  .buttons {
+  /* Resize and center buttons */
+  .hero-buttons {
     display: flex;
     flex-direction: column;
     gap: 12px;
-    align-items: center;
     justify-content: center;
-    margin-top: 15px;
+    align-items: center;
+    width: 100%;
   }
 
-  /* GitHub + LinkedIn icons */
-  .social-icons {
+  .hero-buttons .btn {
+    width: 80%;
+    text-align: center;
+  }
+
+  /* Responsive profile image */
+  .hero-image {
+    margin-top: 20px;
     display: flex;
     justify-content: center;
-    gap: 18px;
-    margin-top: 18px;
+    width: 100%;
   }
 
-  /* Prevent text overflow left */
-  .hero-content {
-    padding: 0 15px;
+  .hero-image img {
+    width: 60%;
+    max-width: 220px;
+    height: auto;
+    object-fit: cover;
+    object-position: top; /* Moves head slightly down */
+  }
+
+  /* Social Icons Alignment */
+  .social-icons {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
+
+  .social-icons i {
+    font-size: 32px; /* Bigger icons for mobile */
+  }
+}
+
+/* ----- MOBILE VIEW FIX FOR HERO SECTION ----- */
+@media (max-width: 768px) {
+  .hero {
+    flex-direction: column;    /* Stack text above image */
+    text-align: center;        /* Center text for mobile */
+    padding-top: 6rem;         /* Prevent navbar overlap */
+  }
+
+  .hero-text h1 {
+    font-size: 1.8rem;
+  }
+
+  .hero-text h2 {
+    font-size: 1.1rem;
+  }
+
+  .hero-text p {
+    font-size: 0.95rem;
+    margin: 0 auto 1.2rem;
+  }
+
+  .hero-buttons {
+    flex-direction: column;    /* Stack buttons vertically */
+    gap: 0.8rem;
+    align-items: center;
+  }
+
+  .hero-image img {
+    width: 180px;              /* Resize for mobile */
+    height: 180px;
+    object-fit: cover;
+    object-position: top;      /* Move head into frame */
+    margin-top: 1.5rem;
+  }
+
+  .social-icons {
+    justify-content: center;
+    margin-top: 0.5rem;
   }
 }
 
